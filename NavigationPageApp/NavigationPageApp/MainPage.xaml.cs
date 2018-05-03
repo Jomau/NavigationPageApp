@@ -13,5 +13,9 @@ namespace NavigationPageApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        public async void SiguienteButton_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new Pagina2());
+        }
+    }
 }

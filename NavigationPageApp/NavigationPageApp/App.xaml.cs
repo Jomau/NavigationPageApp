@@ -13,8 +13,12 @@ namespace NavigationPageApp
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPageApp.MainPage();
-		}
+			var navigationPage = new NavigationPage(new MainPage());
+            navigationPage.BarBackgroundColor = Color.Black;
+            navigationPage.BarTextColor = Color.White;
+            MainPage = navigationPage;
+
+        }
 
 		protected override void OnStart ()
 		{
